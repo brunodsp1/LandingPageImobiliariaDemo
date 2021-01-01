@@ -7,17 +7,20 @@
     h2 {font-size: 1.5em; color: #333;}
     p {font-size: 1em; color: #777;}
     
-    /* CABEÇALHO */
-    
     /* SOCIAL ICONS */
     .social-icons {float: right;}
-    .social-icons a {color: #fff; float: left; margin-left: 12px;}
-    .btn-facebook:hover {color:#3B5998;}
-    .btn-twitter:hover {color:#54A4D6;}
-    .btn-google:hover {color: #D73D32;}
+    .fa-whatsapp {color:#fff;}
+    
+    /* CONHEÇA */
+    .principal{display: flex; background-color: grey; width:100%; height: auto;}
     
     /* PRINCIPAL */
+    .principal{display: flex;}
     
-    /* NEWSLETTER */
+    /* MAPA */
+    .principal{display: flex;}
+    
+    /* CONTATO*/
+    .principal{display: flex;}
     
     /* RODAPÉ */
