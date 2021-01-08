@@ -105,6 +105,12 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:center;
+}
+
+.atendimento img{
+  max-width: 200px;
+  margin-bottom: 50px;
 }
 
 .msg-atend h1 {
@@ -118,10 +124,10 @@ h2 {
 
 .msg-atend h2 {
   width: 320px;
-  margin-bottom: 50px;
   font-size: 40px;
   font-family: "Playfair Display";
   color: #fff;
+  margin-bottom: 50px;
 }
 
 .telefone {
@@ -160,6 +166,24 @@ h2 {
 }
 
 /* CONTATO */
+
+.contato-border-wrapper {
+  position: relative;
+  margin: 50px 0 0 50px;
+  display: inline-block;
+}
+
+.contato-border-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #fff;
+  left: 30px;
+  top: -30px;
+  z-index: -1;
+}
+
 .contato {
   background-color: #00253f;
   width: 495px;
