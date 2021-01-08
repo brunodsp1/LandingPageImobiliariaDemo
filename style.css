@@ -93,10 +93,10 @@ h2 {
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 3s ease-in-out;
-  -moz-animation: fadeIn 3s ease-in-out;
-  -o-animation: fadeIn 3s ease-in-out;
-  animation: fadeIn 3s ease-in-out;
+  -webkit-animation: fadeIn 1s ease-in-out;
+  -moz-animation: fadeIn 1s ease-in-out;
+  -o-animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .atendimento {
@@ -163,7 +163,7 @@ h2 {
 .contato {
   background-color: #00253f;
   width: 495px;
-  padding: 60px;
+  padding: 40px;
 }
 .contato h1 {
   color: #b59635;
@@ -191,7 +191,7 @@ select {
   padding: 12px; /* Some padding */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
+  margin-bottom: 6px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 textarea {
@@ -199,7 +199,7 @@ textarea {
   padding: 12px; /* Some padding */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
+  margin-bottom: 6px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
@@ -209,7 +209,7 @@ input[type="tel"] {
   padding: 12px; /* Some padding */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
+  margin-bottom: 6px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 input[type="email"] {
@@ -217,7 +217,7 @@ input[type="email"] {
   padding: 12px; /* Some padding */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
+  margin-bottom: 6px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
