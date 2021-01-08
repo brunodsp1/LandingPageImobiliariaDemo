@@ -56,7 +56,9 @@ h2 {
 /* PRIMEIRA SEÇÃO */
 .first-section {
   display: flex;
-  background-image: url(bg-1.png);
+  justify-content: center;
+  width: 100%;
+  background-image: url(bg-1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -173,7 +175,7 @@ h2 {
 
 .contato-border-wrapper {
   position: relative;
-  margin: 50px 0 0 50px;
+  margin: 40px 0 0 50px;
   display: inline-block;
 }
 
@@ -192,18 +194,21 @@ h2 {
   background-color: #00253f;
   width: 495px;
   padding: 20px 40px 40px 40px;
+  margin-bottom: 50px;
 }
 .contato h1 {
   color: #b59635;
   font-size: 40px;
   font-family: "Playfair Display";
   line-height: 1.1em;
+  margin-bottom: 5px;
 }
 
 .contato h2 {
   color: #fff;
   font-size: 14px;
   font-family: "Montserrat";
+  margin-bottom: 5px;
 }
 
 .contato b {
@@ -224,6 +229,7 @@ select {
 }
 textarea {
   width: 100%; /* Full width */
+  height: 150px;
   padding: 12px; /* Some padding */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
