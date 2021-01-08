@@ -43,18 +43,22 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: grey;
+  background-color: lightgrey;
   width: 100%;
   height: auto;
 }
 
 .wrapper {
   width: 80%;
+  display: flex;
 }
 
 /* PRIMEIRA SEÇÃO */
 .first-section {
   display: flex;
+  background-image: url(bg-1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* ATENDIMENTO */
@@ -105,10 +109,10 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
-.atendimento img{
+.atendimento img {
   max-width: 200px;
   margin-bottom: 50px;
 }
@@ -174,7 +178,7 @@ h2 {
 }
 
 .contato-border-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -267,6 +271,14 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
+/* SEGUNDA SEÇÃO */
+.second-section {
+  display: flex;
+  background-image: url(bg-2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /* CONHEÇA */
 .conheca {
   display: flex;
@@ -283,3 +295,16 @@ input[type="submit"]:hover {
 }
 
 /* RODAPÉ */
+.rodape {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+  background-color: #00253f;
+  color: white;
+  text-align: center;
+}
+.rodape img {
+  max-width: 150px;
+  padding: 15px 0;
+}
