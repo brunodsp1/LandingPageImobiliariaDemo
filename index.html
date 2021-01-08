@@ -72,7 +72,7 @@
       </div>
       <div class="segunda-secao">
         <div class="wrapper">
-          <div class="segundo-texto">
+          <div class="segunda-texto">
             <h1>CONHEÇA AS NOSSAS<br />MELHORES OPÇÕES</h1>
             <h2>Imóveis e áreas para invstidores e construtores</h2>
             <p>
@@ -87,6 +87,31 @@
               <li><span>Bairros planejados</span></li>
               <li><span>Grandes áreas para construção</span></li>
             </ul>
+          </div>
+          <div class="slideshow">
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="images/img1.jpg" style="width: 200px" />
+                <div class="text">Caption Text</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="images/img2.jpg" style="width: 200px" />
+                <div class="text">Caption Two</div>
+              </div>
+
+              <div class="mySlides fade">
+                <img src="images/img3.jpg" style="width: 200px" />
+                <div class="text">Caption Three</div>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br />
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -116,5 +141,39 @@
         <img src="crf_logo.png" alt="CRF Negócios Imobiliários" />
       </footer>
     </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </body>
 </html>
