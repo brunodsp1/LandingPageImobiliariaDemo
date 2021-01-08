@@ -10,6 +10,10 @@
   outline: none;
 }
 
+::placeholder {
+  color: #00253f;
+}
+
 img {
   max-width: 100%;
 }
@@ -47,9 +51,14 @@ h2 {
   width: 80%;
 }
 
+/* PRIMEIRA SEÇÃO */
+.first-section {
+  display: flex;
+}
+
 /* ATENDIMENTO */
 .atendimento {
-  width: 320px;
+  width: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -58,14 +67,17 @@ h2 {
 
 .msg-atend h1 {
   background-image: linear-gradient(90deg, #d7bf6f, #9e7a47, #d7b76f);
+  padding: 5px;
+  width: 320px;
   font-size: 14px;
   font-family: "Montserrat";
   color: #fff;
 }
 
 .msg-atend h2 {
+  width: 320px;
   font-size: 40px;
-  font-family: "Myriad-Pro";
+  font-family: "Playfair Display";
   color: #fff;
 }
 
@@ -108,49 +120,76 @@ h2 {
 .contato {
   background-color: #00253f;
   width: 495px;
+  padding: 60px;
 }
-.contato h1{
+.contato h1 {
   color: #b59635;
   font-size: 40px;
-  font-family: "Myriad-Pro";
+  font-weight: bold;
+  font-family: "Playfair Display";
 }
 
-.contato h2{
+.contato h2 {
   color: #fff;
   font-size: 14px;
   font-family: "Montserrat";
 }
 
-.contato b{
+.contato b {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
   font-family: "Montserrat";
 }
 
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
+input[type="text"],
+select {
+  width: 48%; /* Full width */
+  padding: 12px; /* Some padding */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type="tel"] {
+  float: right;
+  width: 48%; /* Full width */
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type="email"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+input[type="submit"] {
+  width: 100%;
   background-color: #53626d;
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #b59635;
 }
 
