@@ -163,13 +163,13 @@ h2 {
 .contato {
   background-color: #00253f;
   width: 495px;
-  padding: 40px;
+  padding: 20px 40px 40px 40px;
 }
 .contato h1 {
   color: #b59635;
   font-size: 40px;
-  font-weight: bold;
   font-family: "Playfair Display";
+  line-height: 1.1em;
 }
 
 .contato h2 {
