@@ -1,26 +1,179 @@
 /* RESET */
-* {margin: 0; padding: 0; font-size: 100%; font-family: 'Open Sans', sans-serif; font-weight: normal;
-    box-sizing:border-box; border:none; outline: none; }
-    img {max-width: 100%;}
-    ul {list-style: none;}
-    a {text-decoration: none;}
-    h2 {font-size: 1.5em; color: #333;}
-    p {font-size: 1em; color: #777;}
-    
-    /* SOCIAL ICONS */
-    .social-icons {float: right;}
-    .fa-whatsapp {color:#fff;}
-    
-    /* CONHEÇA */
-    .principal{display: flex; background-color: grey; width:100%; height: auto;}
-    
-    /* PRINCIPAL */
-    .principal{display: flex;}
-    
-    /* MAPA */
-    .principal{display: flex;}
-    
-    /* CONTATO*/
-    .principal{display: flex;}
-    
-    /* RODAPÉ */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 1em;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  float: right;
+}
+
+.fa-whatsapp {
+  color: #fff;
+  margin-right: 5px;
+}
+
+/* PRINCIPAL */
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+/* ATENDIMENTO */
+.atendimento {
+  width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msg-atend h1 {
+  background-image: linear-gradient(90deg, #d7bf6f, #9e7a47, #d7b76f);
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+.msg-atend h2 {
+  font-size: 40px;
+  font-family: "Myriad-Pro";
+  color: #fff;
+}
+
+.telefone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 213px;
+}
+
+.border-wrapper {
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(90deg, #d7bf6f, #9e7a47, #d7b76f);
+  border-image-slice: 1;
+}
+
+.telefone h1 {
+  margin-top: 8px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #fff;
+  background: none;
+}
+
+.telefone .numero {
+  display: flex;
+  align-items: flex-start;
+  width: 210px;
+  margin-bottom: 8px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 21px;
+  color: #fff;
+}
+
+/* CONTATO */
+.contato {
+  background-color: #00253f;
+  width: 495px;
+}
+.contato h1{
+  color: #b59635;
+  font-size: 40px;
+  font-family: "Myriad-Pro";
+}
+
+.contato h2{
+  color: #fff;
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
+.contato b{
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #53626d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #b59635;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* CONHEÇA */
+.conheca {
+  display: flex;
+}
+
+/* MAPA */
+.principal {
+  display: flex;
+}
+
+/* CONTATO*/
+.principal {
+  display: flex;
+}
+
+/* RODAPÉ */
