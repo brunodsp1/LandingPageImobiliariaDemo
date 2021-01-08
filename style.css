@@ -57,11 +57,13 @@ h2 {
 .primeira-secao {
   display: flex;
   justify-content: center;
+  position: relative;
   width: 100%;
   background-image: url(bg-1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  z-index: 0;
 }
 
 /* ATENDIMENTO */
@@ -91,6 +93,47 @@ h2 {
 }
 @keyframes fadeIn {
   0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes transition {
+  0% {
+    left: 100px;
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes transition {
+  0% {
+    left: 100px;
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes transition {
+  0% {
+    left: 100px;
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes transition {
+  0% {
+    left: 100px;
+    top: -50px;
     opacity: 0;
   }
   100% {
@@ -175,26 +218,31 @@ h2 {
 
 .contato-border-wrapper {
   position: relative;
-  margin: 40px 0 0 50px;
+  margin: 50px 0 0 50px;
   display: inline-block;
+  z-index: 2;
 }
 
 .contato-border-wrapper::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 10px solid #fff;
-  left: 30px;
+  width: 85%;
+  height: 85%;
+  border: 10px solid lightgrey;
+  left: 80px;
   top: -30px;
-  z-index: -1;
+  z-index: 1;
+  animation-name: transition;
+  animation-duration: 2s;
 }
 
 .contato {
+  position: relative;
   background-color: #00253f;
   width: 495px;
   padding: 20px 40px 40px 40px;
   margin-bottom: 50px;
+  z-index: 3;
 }
 .contato h1 {
   color: #bc9e5c;
@@ -280,13 +328,10 @@ input[type="submit"]:hover {
 /* SEGUNDA SEÇÃO */
 .segunda-secao {
   display: flex;
-  background-image: url(bg-2.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-.segundo-texto{
-  width:50%;
+.segundo-texto {
+  width: 50%;
   padding-left: 5%;
 }
 
@@ -314,7 +359,7 @@ input[type="submit"]:hover {
 }
 
 .segundo-texto ul {
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 
 .segundo-texto ul li {
@@ -328,7 +373,7 @@ input[type="submit"]:hover {
   margin-bottom: 5px;
 }
 
-.segundo-texto ul li span{
+.segundo-texto ul li span {
   font-size: 14px;
 }
 
@@ -340,18 +385,8 @@ input[type="submit"]:hover {
   font-size: 1.1em;
 }
 
-/* CONHEÇA */
-.conheca {
-  display: flex;
-}
-
-/* MAPA */
-.principal {
-  display: flex;
-}
-
-/* CONTATO*/
-.principal {
+/* TERCEIRA SEÇÃO */
+.terceira-secao {
   display: flex;
 }
 
