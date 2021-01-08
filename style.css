@@ -197,7 +197,7 @@ h2 {
   margin-bottom: 50px;
 }
 .contato h1 {
-  color: #b59635;
+  color: #bc9e5c;
   font-size: 40px;
   font-family: "Playfair Display";
   line-height: 1.1em;
@@ -267,7 +267,7 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #b59635;
+  background-color: #bc9e5c;
 }
 
 /* Add a background color and some padding around the form */
