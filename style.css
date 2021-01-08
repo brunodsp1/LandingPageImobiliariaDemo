@@ -54,7 +54,7 @@ h2 {
 }
 
 /* PRIMEIRA SEÇÃO */
-.first-section {
+.primeira-secao {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -278,11 +278,66 @@ input[type="submit"]:hover {
 }
 
 /* SEGUNDA SEÇÃO */
-.second-section {
+.segunda-secao {
   display: flex;
   background-image: url(bg-2.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.segundo-texto{
+  width:50%;
+  padding-left: 5%;
+}
+
+.segundo-texto h1 {
+  color: #00253f;
+  font-size: 33px;
+  font-family: "Playfair Display";
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.segundo-texto h2 {
+  color: #00253f;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: "Montserrat";
+  margin-bottom: 10px;
+}
+
+.segundo-texto p {
+  color: #00253f;
+  font-size: 14px;
+  font-family: "Montserrat";
+  margin-bottom: 25px;
+}
+
+.segundo-texto ul {
+  margin-bottom: 5px;
+}
+
+.segundo-texto ul li {
+  display: list-item;
+  list-style-type: none;
+  position: relative;
+  color: #00253f;
+  font-size: 14px;
+  margin-left: 1rem;
+  font-family: "Montserrat";
+  margin-bottom: 5px;
+}
+
+.segundo-texto ul li span{
+  font-size: 14px;
+}
+
+.segundo-texto ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #bc9e5c; /* Change the color */
+  position: absolute;
+  left: -0.8em; /* Adjust this value so that it appears where you want. */
+  font-size: 1.1em;
 }
 
 /* CONHEÇA */
