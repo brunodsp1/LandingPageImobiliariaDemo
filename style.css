@@ -743,8 +743,45 @@ input[type="submit"]:hover {
 .fade {
   margin: 50px;
   padding: 50px;
-  background-color: lightgreen;
   opacity: 1;
+}
+
+/* QUARTA SEÇÃO */
+.quinta-secao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  width: 100%;
+  background-color: #00253f;
+}
+
+.quinta-texto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+}
+.quinta-texto h1{
+  color:#fff;
+  font-family: "Playfair Display";
+  font-size: 40px;
+  margin-right: 5px;
+}
+.quinta-texto h2{
+  color:#bc9e5c;
+  font-family: "Playfair Display";
+  font-size: 40px;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 70px;
 }
 
 /* RODAPÉ */
