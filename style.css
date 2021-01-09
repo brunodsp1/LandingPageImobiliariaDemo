@@ -763,18 +763,21 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 .quinta-texto h1{
   color:#fff;
   font-family: "Playfair Display";
   font-size: 40px;
-  margin-right: 5px;
+  font-weight: bold;
+  margin-right: 15px;
 }
 .quinta-texto h2{
   color:#bc9e5c;
   font-family: "Playfair Display";
   font-size: 40px;
+  font-weight: bold;
 }
 
 .mapa {
