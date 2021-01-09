@@ -399,12 +399,15 @@ input[type="submit"]:hover {
 .slideshow {
   display: flex;
   width: 50%;
+  margin-bottom: 25px;
 }
 
 .slideshow-container {
   display: flex;
   position: relative;
   margin: 50px;
+  max-width: 480px;
+  max-height: 480px;
 }
 
 /* Hide the images by default */
@@ -414,6 +417,8 @@ input[type="submit"]:hover {
 }
 .mySlides1 img {
   object-fit: fill;
+  max-width: 480px;
+ max-height: 480px;
 }
 
 /* Next & previous buttons */
@@ -424,7 +429,6 @@ input[type="submit"]:hover {
   background-color: rgba(0, 37, 61, 0.3);
   top: 50%;
   width: auto;
-  margin-top: -37px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -435,7 +439,7 @@ input[type="submit"]:hover {
 
 /* Position the "next button" to the right */
 .next {
-  right: 14px;
+  right: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -460,7 +464,7 @@ input[type="submit"]:hover {
   padding-top: 4px;
   padding-bottom: 4px;
   position: absolute;
-  bottom: 72px;
+  bottom: 10px;
   width: 60%;
   text-align: center;
 }
@@ -471,22 +475,29 @@ input[type="submit"]:hover {
   font-size: 14px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 46px;
+  bottom: -20px;
   width: 60%;
   text-align: center;
 }
 
 /* The dots/bullets/indicators */
+.dot-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  left:-255px;
+  bottom: -165px;
+}
+
 .dot {
   cursor: pointer;
-  position: relative;
   height: 10px;
   width: 10px;
-  bottom: 40px;
   margin: 0 2px;
   background-color: #fff;
   border-radius: 50%;
-  display: inline-flex;
+  display: inline-block;
   transition: background-color 0.6s ease;
 }
 
