@@ -322,7 +322,7 @@ input[type="submit"] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   background-image: linear-gradient(90deg, #9e7a47, #d7bf6f, #9e7a47);
-  color:#00253f;
+  color: #00253f;
   font-weight: bold;
 }
 
@@ -419,7 +419,7 @@ input[type="submit"]:hover {
 .mySlides1 img {
   object-fit: fill;
   max-width: 480px;
- max-height: 480px;
+  max-height: 480px;
 }
 
 /* Next & previous buttons */
@@ -487,7 +487,7 @@ input[type="submit"]:hover {
   position: relative;
   flex-direction: row;
   align-items: center;
-  left:-255px;
+  left: -255px;
   bottom: -165px;
 }
 
@@ -659,11 +659,33 @@ input[type="submit"]:hover {
   margin-bottom: 70px;
 }
 
-.terrenos {
+.conteudo-border-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.conteudo-border-wrapper::after {
+  border: 4px solid;
+  border-image: linear-gradient(90deg, #9e7a47, #d7bf6f, #9e7a47);
+  border-image-slice: 1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -15px;
+  top: -15px;
+  z-index: 1;
+}
+
+.terrenos,
+.grandes-terrenos,
+.permutas {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-family: "Montserrat";
+  color: #00253f;
 }
 
 .terrenos .icone-per {
@@ -683,14 +705,7 @@ input[type="submit"]:hover {
 
 .terrenos h2 {
   width: 250px;
-}
-
-.grandes-terrenos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  animation-delay: 1s;
+  font-size: 14px;
 }
 
 .grandes-terrenos .icone-per {
@@ -709,33 +724,7 @@ input[type="submit"]:hover {
 
 .grandes-terrenos h2 {
   width: 250px;
-}
-
-.permutas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-family: "Montserrat";
-  animation-delay: 2s;
-}
-
-.conteudo-border-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.conteudo-border-wrapper::after {
-  border: 4px solid;
-  border-image: linear-gradient(90deg, #9e7a47, #d7bf6f, #9e7a47);
-  border-image-slice: 1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -15px;
-  top: -15px;
-  z-index: 1;
+  font-size: 14px;
 }
 
 .permutas .icone-per {
@@ -754,6 +743,7 @@ input[type="submit"]:hover {
 
 .permutas h2 {
   width: 250px;
+  font-size: 14px;
 }
 
 .fade {
@@ -872,7 +862,7 @@ input[type="submit"]:hover {
 .botao-fone:hover,
 .botoes:hover {
   background-image: linear-gradient(90deg, #9e7a47, #d7bf6f, #9e7a47);
-  color:#00253f;
+  color: #00253f;
   font-weight: bold;
 }
 
