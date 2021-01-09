@@ -628,7 +628,7 @@ input[type="submit"]:hover {
 
 .quarta-texto h1 {
   font-family: "Montserrat";
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 50px;
   color: #00253f;
 }
@@ -774,13 +774,13 @@ input[type="submit"]:hover {
 .quinta-texto h1{
   color:#fff;
   font-family: "Playfair Display";
-  font-size: 40px;
+  font-size: 35px;
   margin-right: 15px;
 }
 .quinta-texto h2{
   color:#bc9e5c;
   font-family: "Playfair Display";
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .mapa {
