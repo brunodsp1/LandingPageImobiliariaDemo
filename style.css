@@ -27,8 +27,6 @@ a {
 }
 h2 {
   font-size: 1em;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 /* SOCIAL ICONS */
@@ -188,6 +186,13 @@ fa-phone {
   margin-bottom: 50px;
 }
 
+.telefone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 213px;
+}
+
 .border-wrapper {
   border-top: 4px solid;
   border-bottom: 4px solid;
@@ -205,10 +210,10 @@ fa-phone {
 
 .telefone .numero {
   display: flex;
-  flex-direction: row;
+  align-items: flex-start;
   width: 210px;
   margin-bottom: 8px;
-  align-items: baseline;
+  text-align: center;
   justify-content: center;
   font-family: "Montserrat";
   font-weight: bold;
@@ -244,8 +249,6 @@ fa-phone {
   padding: 20px 40px 40px 40px;
   margin-bottom: 70px;
   z-index: 2;
-  font-family: "Montserrat";
-  color: #fff;
 }
 .contato h1 {
   color: #bc9e5c;
@@ -256,32 +259,36 @@ fa-phone {
 }
 
 .contato h2 {
+  color: #fff;
   font-size: 14px;
+  font-family: "Montserrat";
   margin-bottom: 5px;
 }
 
 .contato b {
+  color: #fff;
   font-size: 14px;
   font-weight: bold;
+  font-family: "Montserrat";
 }
 
 input[type="text"],
 select {
-  width: 48%;
-  padding: 12px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  resize: vertical;
+  width: 48%; /* Full width */
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 textarea {
-  width: 100%;
+  width: 100%; /* Full width */
   height: 150px;
-  padding: 12px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  resize: vertical;
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 input[type="tel"] {
@@ -294,14 +301,15 @@ input[type="tel"] {
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 input[type="email"] {
-  width: 100%;
-  padding: 12px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  resize: vertical;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 6px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+/* Style the submit button with a specific background color etc */
 input[type="submit"] {
   width: 100%;
   background-color: #53626d;
@@ -311,12 +319,14 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+/* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   background-image: linear-gradient(90deg, #9e7a47, #d7bf6f, #9e7a47);
   color: #00253f;
   font-weight: bold;
 }
 
+/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -531,12 +541,76 @@ input[type="submit"]:hover {
   width: 100%;
 }
 
-.tales {
+.slideshow2 {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
-.carousel-inner{
-  width:100%;
-  max-height: 600px !important;
+
+.slideshow-container2 {
+  position: relative;
+  width: 100%;
+}
+
+.mySlides2 {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.mySlides2 img {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  background-color: rgba(0, 37, 61, 0.3);
+  top: 50%;
+  width: auto;
+  margin-top: -40px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+  background-color: rgba(0, 37, 61, 0.6);
+}
+
+.dot2 {
+  cursor: pointer;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  bottom: 40px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot2:hover {
+  background-color: #00253f;
 }
 
 /* QUARTA SEÇÃO */
@@ -614,9 +688,7 @@ input[type="submit"]:hover {
   color: #00253f;
 }
 
-.terrenos .icone-per,
-.grandes-terrenos .icone-per,
-.permutas .icone-per {
+.terrenos .icone-per {
   position: relative;
   align-items: center;
   background-color: #00253f;
@@ -625,17 +697,50 @@ input[type="submit"]:hover {
   z-index: 2;
 }
 
-.terrenos h1,
-.grandes-terrenos h1,
+.terrenos h1 {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.terrenos h2 {
+  width: 250px;
+  font-size: 14px;
+}
+
+.grandes-terrenos .icone-per {
+  position: relative;
+  background-color: #00253f;
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+}
+
+.grandes-terrenos h1 {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.grandes-terrenos h2 {
+  width: 250px;
+  font-size: 14px;
+}
+
+.permutas .icone-per {
+  position: relative;
+  background-color: #00253f;
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+}
+
 .permutas h1 {
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 20px;
-  font-size: 14px;
 }
 
-.terrenos h2,
-.grandes-terrenos h2,
 .permutas h2 {
   width: 250px;
   font-size: 14px;
@@ -667,7 +772,6 @@ input[type="submit"]:hover {
   padding-top: 50px;
   padding-bottom: 20px;
 }
-
 .quinta-texto h1 {
   color: #fff;
   font-family: "Playfair Display";
