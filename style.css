@@ -35,7 +35,6 @@ h2 {
 }
 
 .fa-whatsapp {
-  color: #fff;
   margin-right: 5px;
 }
 
@@ -323,6 +322,8 @@ input[type="submit"] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   background-image: linear-gradient(90deg, #9e7a47, #d7bf6f, #9e7a47);
+  color:#00253f;
+  font-weight: bold;
 }
 
 /* Add a background color and some padding around the form */
@@ -668,6 +669,7 @@ input[type="submit"]:hover {
 
 .terrenos .icone-per {
   position: relative;
+  align-items: center;
   background-color: #00253f;
   width: 70px;
   height: 70px;
@@ -871,6 +873,8 @@ input[type="submit"]:hover {
 .botao-fone:hover,
 .botoes:hover {
   background-image: linear-gradient(90deg, #9e7a47, #d7bf6f, #9e7a47);
+  color:#00253f;
+  font-weight: bold;
 }
 
 .sexta-form {
