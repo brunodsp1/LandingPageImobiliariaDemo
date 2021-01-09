@@ -38,6 +38,10 @@ h2 {
   margin-right: 5px;
 }
 
+fa-exchange-alt {
+  margin: auto;
+}
+
 /* PRINCIPAL */
 .principal {
   display: flex;
@@ -64,7 +68,6 @@ h2 {
   background-attachment: fixed;
   background-size: cover;
 }
-
 
 /* ATENDIMENTO */
 @-webkit-keyframes fadeIn {
@@ -112,7 +115,7 @@ h2 {
 }
 @-moz-keyframes transition {
   0% {
-    left:   100px;
+    left: 100px;
     top: -50px;
     opacity: 0;
   }
@@ -240,7 +243,7 @@ h2 {
   background-color: #00253f;
   width: 495px;
   padding: 20px 40px 40px 40px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   z-index: 2;
 }
 .contato h1 {
@@ -327,11 +330,14 @@ input[type="submit"]:hover {
 /* SEGUNDA SEÇÃO */
 .segunda-secao {
   display: flex;
+  justify-content: center;
+  position: relative;
+  height: 400px;
 }
 
 .segunda-texto {
   width: 50%;
-  padding-left: 5%;
+  padding-left: 9%;
 }
 
 .segunda-texto h1 {
@@ -384,81 +390,103 @@ input[type="submit"]:hover {
   font-size: 1.1em;
 }
 
-.slideshow{
+/* Slideshow container */
+.slideshow {
+  display: flex;
   width: 50%;
 }
-/* Slideshow container */
+
 .slideshow-container {
+  display: flex;
   position: relative;
-  margin: auto;
+  margin: 50px;
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides1 {
   display: none;
+  position: relative;
+}
+.mySlides1 img {
+  object-fit: fill;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -37px;
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 12px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.459);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text h1 {
+  margin: auto;
+  color: #fff;
+  background-color: #00253f;
+  font-family: "Playfair";
+  font-size: 25px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
+  bottom: 72px;
+  width: 60%;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+.text h2 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 14px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  bottom: 46px;
+  width: 60%;
+  text-align: center;
 }
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  position: relative;
+  height: 10px;
+  width: 10px;
+  bottom: 40px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
-  display: inline-block;
+  display: inline-flex;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+  background-color: #00253f;
 }
 
 /* Fading animation */
@@ -470,20 +498,229 @@ input[type="submit"]:hover {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* TERCEIRA SEÇÃO */
 .terceira-secao {
   display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
+.slideshow2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.slideshow-container2 {
+  position: relative;
+  width: 100%;
+}
+
+.mySlides2 {
+  display: none;
+  position: relative;
+}
+
+.mySlides2 img {
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -40px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+  background-color: rgba(0, 0, 0, 0.322);
+}
+
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot2:hover {
+  background-color: #00253f;
+}
+
+/* QUARTA SEÇÃO */
+.quarta-secao {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.wrapper-quarta {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.quarta-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.quarta-texto h1 {
+  font-family: "Montserrat";
+  font-size: 14px;
+  margin-top: 50px;
+  color: #00253f;
+}
+
+.quarta-texto h2 {
+  font-family: "Playfair";
+  font-size: 40px;
+  color: #00253f;
+  margin-bottom: 50px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.terrenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.terrenos .icone-per {
+  background-color: #00253f;
+  width: 70px;
+  height: 70px;
+  z-index: 4;
+}
+
+.terrenos h1 {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.terrenos h2 {
+  width: 250px;
+}
+
+.grandes-terrenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grandes-terrenos .icone-per {
+  background-color: #00253f;
+  width: 70px;
+  height: 70px;
+  z-index: 5;
+}
+
+.grandes-terrenos h1 {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.grandes-terrenos h2 {
+  width: 250px;
+}
+
+.permutas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.conteudo-border-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.conteudo-border-wrapper::after {
+  border: 4px solid;
+  border-image: linear-gradient(90deg, #d7bf6f, #9e7a47, #d7b76f);
+  border-image-slice: 1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -15px;
+  top: -15px;
+  z-index: 3;
+}
+
+.permutas .icone-per {
+  background-color: #00253f;
+  width: 70px;
+  height: 70px;
+  z-index: 6;
+}
+
+.permutas h1 {
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.permutas h2 {
+  width: 250px;
+}
 /* RODAPÉ */
 .rodape {
   display: flex;
