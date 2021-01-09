@@ -95,6 +95,30 @@
           })
           .scroll(); //invoke scroll-handler on page-load
       });
+      $(window).on("load", function () {
+        $(window)
+          .scroll(function () {
+            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+            $(".fadeScroll3").each(function () {
+              /* Check the location of each desired element */
+              var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+              /* If the element is completely within bounds of the window, fade it in */
+              if (objectBottom < windowBottom) {
+                //object comes into view (scrolling down)
+                if ($(this).css("opacity") == 0) {
+                  $(this).fadeTo(2600, 1);
+                }
+              } else {
+                //object goes out of view (scrolling up)
+                if ($(this).css("opacity") == 1) {
+                  $(this).fadeTo(500, 0);
+                }
+              }
+            });
+          })
+          .scroll(); //invoke scroll-handler on page-load
+      });
     </script>
     <div class="principal">
       <div class="primeira-secao">
@@ -276,7 +300,7 @@
         </div>
       </div>
       <div class="quinta-secao">
-        <div class="quinta-texto">
+        <div class="quinta-texto fadeScroll">
           <h1>CONFIRA NOSSA</h1>
           <h2>ÁREA DE ATUAÇÃO</h2>
         </div>
@@ -295,21 +319,21 @@
       </div>
       <div class="sexta-secao">
         <div class="wrapper-sexta">
-          <div class="sexta-texto">
+          <div class="sexta-texto fadeScroll">
             <h1>Deseja um atendimento personalizado?</h1>
             <p>
               Preencha o formulário ou clique em um dos botões abaixo para falar
               diretamente com um de nossos corretores!
             </p>
             <div class="sexta-botoes">
-              <a class="botao-fone" href="tel:00000000"
+              <a class="botao-fone fadeScroll1" href="tel:00000000"
                 ><i class="fa fa-phone" style="font-size: 14px"></i> Ligar</a
               >
-              <a class="botoes" href="https://wa.me/000000000">
+              <a class="botoes fadeScroll2" href="https://wa.me/000000000">
                 <i class="fa fa-whatsapp" style="font-size: 14px"></i>
                 Whatsapp</a
               >
-              <a class="botoes" href="mailto: abc@example.com"
+              <a class="botoes fadeScroll3" href="mailto: abc@example.com"
                 ><i class="fa fa-envelope-o" style="font-size: 14px"></i>
                 E-mail</a
               >
