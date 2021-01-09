@@ -416,6 +416,7 @@ input[type="submit"]:hover {
 .next {
   cursor: pointer;
   position: absolute;
+  background-color: rgba(0, 37, 61, 0.3);
   top: 50%;
   width: auto;
   margin-top: -37px;
@@ -429,13 +430,13 @@ input[type="submit"]:hover {
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 14px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.459);
+  background-color: rgba(0, 37, 61, 0.6);
 }
 
 /* Caption text */
@@ -537,9 +538,16 @@ input[type="submit"]:hover {
 .mySlides2 {
   display: none;
   position: relative;
+  width: 100%;
+  
 }
 
 .mySlides2 img {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+    background-size: cover;
+    background-position: center;
   object-fit: cover;
 }
 
@@ -548,6 +556,7 @@ input[type="submit"]:hover {
 .next2 {
   cursor: pointer;
   position: absolute;
+  background-color: rgba(0, 37, 61, 0.3);
   top: 50%;
   width: auto;
   margin-top: -40px;
@@ -567,13 +576,15 @@ input[type="submit"]:hover {
 /* On hover, add a black background color with a little bit see-through */
 .prev2:hover,
 .next2:hover {
-  background-color: rgba(0, 0, 0, 0.322);
+  background-color: rgba(0, 37, 61, 0.6);
 }
 
 .dot2 {
   cursor: pointer;
+  position: relative;
   height: 15px;
   width: 15px;
+  bottom: 40px;
   margin: 0 2px;
   background-color: #fff;
   border-radius: 50%;
@@ -581,6 +592,7 @@ input[type="submit"]:hover {
   transition: background-color 0.6s ease;
 }
 
+.active,
 .dot2:hover {
   background-color: #00253f;
 }
@@ -629,6 +641,7 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .terrenos {
@@ -639,10 +652,11 @@ input[type="submit"]:hover {
 }
 
 .terrenos .icone-per {
+  position: relative;
   background-color: #00253f;
   width: 70px;
   height: 70px;
-  z-index: 4;
+  z-index: 2;
 }
 
 .terrenos h1 {
@@ -660,13 +674,15 @@ input[type="submit"]:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  animation-delay: 1s;
 }
 
 .grandes-terrenos .icone-per {
+  position: relative;
   background-color: #00253f;
   width: 70px;
   height: 70px;
-  z-index: 5;
+  z-index: 2;
 }
 
 .grandes-terrenos h1 {
@@ -685,6 +701,7 @@ input[type="submit"]:hover {
   align-items: center;
   text-align: center;
   font-family: "Montserrat";
+  animation-delay: 2s;
 }
 
 .conteudo-border-wrapper {
@@ -694,7 +711,7 @@ input[type="submit"]:hover {
 
 .conteudo-border-wrapper::after {
   border: 4px solid;
-  border-image: linear-gradient(90deg, #d7bf6f, #9e7a47, #d7b76f);
+  border-image: linear-gradient(90deg, #9e7a47, #d7bf6f, #9e7a47);
   border-image-slice: 1;
   content: "";
   position: absolute;
@@ -702,14 +719,15 @@ input[type="submit"]:hover {
   height: 100%;
   left: -15px;
   top: -15px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .permutas .icone-per {
+  position: relative;
   background-color: #00253f;
   width: 70px;
   height: 70px;
-  z-index: 6;
+  z-index: 2;
 }
 
 .permutas h1 {
@@ -721,6 +739,14 @@ input[type="submit"]:hover {
 .permutas h2 {
   width: 250px;
 }
+
+.fade {
+  margin: 50px;
+  padding: 50px;
+  background-color: lightgreen;
+  opacity: 1;
+}
+
 /* RODAPÉ */
 .rodape {
   display: flex;
