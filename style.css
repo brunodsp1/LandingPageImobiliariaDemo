@@ -429,7 +429,6 @@ input[type="submit"]:hover {
 .next {
   cursor: pointer;
   position: absolute;
-  background-color: rgba(0, 37, 61, 0.3);
   top: 50%;
   width: auto;
   padding: 16px;
@@ -446,10 +445,11 @@ input[type="submit"]:hover {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+/*.prev:hover,
 .next:hover {
   background-color: rgba(0, 37, 61, 0.6);
 }
+*/
 
 /* Caption text */
 .text {
@@ -481,6 +481,7 @@ input[type="submit"]:hover {
   bottom: -20px;
   width: 60%;
   text-align: center;
+  background-color: rgba(0, 37, 61, 0.6);
 }
 
 /* The dots/bullets/indicators */
@@ -490,7 +491,7 @@ input[type="submit"]:hover {
   flex-direction: row;
   align-items: center;
   left: -255px;
-  bottom: -165px;
+  bottom: -170px;
 }
 
 .dot {
@@ -574,7 +575,6 @@ input[type="submit"]:hover {
 .next2 {
   cursor: pointer;
   position: absolute;
-  background-color: rgba(0, 37, 61, 0.3);
   top: 50%;
   width: auto;
   margin-top: -40px;
@@ -592,11 +592,11 @@ input[type="submit"]:hover {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev2:hover,
+/*.prev2:hover,
 .next2:hover {
   background-color: rgba(0, 37, 61, 0.6);
 }
-
+*/
 .dot2 {
   cursor: pointer;
   position: relative;
