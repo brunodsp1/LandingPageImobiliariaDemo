@@ -71,6 +71,8 @@ fa-phone {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: bottom;
+  box-shadow: inset 0 0 0 2000px rgba(114, 101, 101, 0.438);
 }
 
 /* ATENDIMENTO */
