@@ -320,7 +320,7 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
   margin-top: 6px; /* Add a top margin */
-  margin-bottom: 6px; 
+  margin-bottom: 6px;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -913,4 +913,106 @@ input[type="submit"]:hover {
 .rodape img {
   max-width: 150px;
   padding: 15px 0;
+}
+
+/* MOBILE */
+@media only screen and (max-device-width: 480px) {
+  .principal {
+    justify-content: center;
+  }
+  .primeira-secao {
+    padding-top: 100px;
+  }
+  .wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .atendimento {
+    width: 100%;
+  }
+  .contato-border-wrapper {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .contato-border-wrapper::after {
+    width: 97%;
+    height: 87%;
+    border: 5px solid lightgrey;
+    left: 15px;
+    top: -15px;
+  }
+  .contato {
+    width: 100%;
+  }
+
+  .segunda-secao {
+    height: auto;
+  }
+  .segunda-texto {
+    width: 100%;
+    padding: 0;
+  }
+
+  .slideshow {
+    width: 100%;
+  }
+  .terceira-secao {
+    height: auto;
+  }
+  .quarta-secao {
+    height: auto;
+  }
+  .wrapper-quarta {
+    width: 90%;
+  }
+
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .conteudo-border-wrapper::after {
+    border: 3px solid;
+    border-image: linear-gradient(90deg, #9e7a47, #d7bf6f, #9e7a47);
+    border-image-slice: 1;
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    left: -10px;
+    top: -10px;
+    z-index: 1;
+  }
+
+  .terrenos,
+  .grandes-terrenos,
+  .permutas{
+    width: 33.33%;
+  }
+
+  .terrenos h2,
+  .grandes-terrenos h2,
+  .permutas h2 {
+    width: 100%;
+  }
+
+  .quinta-secao {
+    height: auto;
+  }
+
+
+  .wrapper-sexta {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sexta-texto,
+  .sexta-form {
+    width: 100%;
+  }
+  /* SCREENS TILL 400PX */
+
+  @media only screen and (max-device-width: 400px) {
+  }
 }

@@ -121,260 +121,262 @@
           .scroll(); //invoke scroll-handler on page-load
       });
     </script>
-    <div class="principal">
-      <div class="primeira-secao">
-        <div class="wrapper">
-          <div class="atendimento fadeIn">
-            <img src="crf_logo.png" alt="CRF Negócios Imobiliários" />
-            <div class="msg-atend">
-              <h1>Atendimento Personalizado</h1>
-              <h2>Voltado para cada <br />tipo de cliente</h2>
+    <div style="overflow: hidden">
+      <div class="principal">
+        <div class="primeira-secao">
+          <div class="wrapper">
+            <div class="atendimento fadeIn">
+              <img src="crf_logo.png" alt="CRF Negócios Imobiliários" />
+              <div class="msg-atend">
+                <h1>Atendimento Personalizado</h1>
+                <h2>Voltado para cada <br />tipo de cliente</h2>
+              </div>
+              <div class="telefone">
+                <div class="border-wrapper">
+                  <h1>Entre em contato!</h1>
+                  <div class="numero">
+                    <i class="fa fa-whatsapp" style="font-size: 30px"></i>
+                    <h2>(47) 9 8849-5812</h2>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="telefone">
-              <div class="border-wrapper">
-                <h1>Entre em contato!</h1>
-                <div class="numero">
-                  <i class="fa fa-whatsapp" style="font-size: 30px"></i>
-                  <h2>(47) 9 8849-5812</h2>
+            <div class="contato-border-wrapper">
+              <div class="contato">
+                <h1>SEU MELHOR INVESTIMENTO AGUARDA</h1>
+                <h2>
+                  Entre em contato e receba uma oferta <br />exclusiva
+                  <b>de acordo com o que você procura</b>
+                </h2>
+                <input type="text" id="name" name="name" placeholder="Nome*" />
+                <input
+                  type="tel"
+                  id="tele"
+                  name="telefone"
+                  placeholder="Telefone*"
+                />
+                <input
+                  type="email"
+                  id="mail"
+                  name="email"
+                  placeholder="Seu melhor e-mail*"
+                />
+                <textarea
+                  id="texto"
+                  name="texto"
+                  placeholder="Nos diga o que você procura"
+                ></textarea>
+                <input type="submit" value="Entre em contato" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="segunda-secao">
+          <div class="wrapper">
+            <div class="segunda-texto">
+              <h1>CONHEÇA AS NOSSAS<br />MELHORES OPÇÕES</h1>
+              <h2>Imóveis e áreas para invstidores e construtores</h2>
+              <p>
+                Seja atendido mesmo se não tivermos as opções que você procura!
+                Temos parceiros de confiançaem várias regiões e com diversas
+                opções
+              </p>
+              <ul>
+                <li><span>Apartamentos</span></li>
+                <li><span>Casas</span></li>
+                <li><span>Condomínios planejados</span></li>
+                <li><span>Bairros planejados</span></li>
+                <li><span>Grandes áreas para construção</span></li>
+              </ul>
+            </div>
+            <div class="slideshow">
+              <div class="slideshow-container">
+                <div class="mySlides1 fadeIn">
+                  <img src="images/img1.jpg" />
+                  <div class="text">
+                    <h1>Apartamentos</h1>
+                    <br />
+                    <h2>Veja as opções no nosso site</h2>
+                  </div>
+                </div>
+
+                <div class="mySlides1 fadeIn">
+                  <img src="images/img2.jpg" />
+                  <div class="text">
+                    <h1>Apartamentos</h1>
+                    <br />
+                    <h2>Veja as opções no nosso site</h2>
+                  </div>
+                </div>
+
+                <div class="mySlides1 fadeIn">
+                  <img src="images/img3.jpg" />
+                  <div class="text">
+                    <h1>Apartamentos</h1>
+                    <br />
+                    <h2>Veja as opções no nosso site</h2>
+                  </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 0)"
+                  ><img src="left.png" width="20px"
+                /></a>
+                <a class="next" onclick="plusSlides(1, 0)"
+                  ><img src="right.png" width="20px"
+                /></a>
+                <div class="dot-container" style="text-align: center">
+                  <span class="dot" onclick="currentSlide(1, 0)"></span>
+                  <span class="dot" onclick="currentSlide(2, 0)"></span>
+                  <span class="dot" onclick="currentSlide(3, 0)"></span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="contato-border-wrapper">
-            <div class="contato">
-              <h1>SEU MELHOR INVESTIMENTO AGUARDA</h1>
-              <h2>
-                Entre em contato e receba uma oferta <br />exclusiva
-                <b>de acordo com o que você procura</b>
-              </h2>
-              <input type="text" id="name" name="name" placeholder="Nome*" />
-              <input
-                type="tel"
-                id="tele"
-                name="telefone"
-                placeholder="Telefone*"
-              />
-              <input
-                type="email"
-                id="mail"
-                name="email"
-                placeholder="Seu melhor e-mail*"
-              />
-              <textarea
-                id="texto"
-                name="texto"
-                placeholder="Nos diga o que você procura"
-              ></textarea>
-              <input type="submit" value="Entre em contato" />
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="segunda-secao">
-        <div class="wrapper">
-          <div class="segunda-texto">
-            <h1>CONHEÇA AS NOSSAS<br />MELHORES OPÇÕES</h1>
-            <h2>Imóveis e áreas para invstidores e construtores</h2>
-            <p>
-              Seja atendido mesmo se não tivermos as opções que você procura!
-              Temos parceiros de confiançaem várias regiões e com diversas
-              opções
-            </p>
-            <ul>
-              <li><span>Apartamentos</span></li>
-              <li><span>Casas</span></li>
-              <li><span>Condomínios planejados</span></li>
-              <li><span>Bairros planejados</span></li>
-              <li><span>Grandes áreas para construção</span></li>
-            </ul>
-          </div>
-          <div class="slideshow">
-            <div class="slideshow-container">
-              <div class="mySlides1 fadeIn">
+        <div class="terceira-secao">
+          <div class="slideshow2">
+            <div class="slideshow-container2">
+              <div class="mySlides2 fadeIn">
                 <img src="images/img1.jpg" />
-                <div class="text">
-                  <h1>Apartamentos</h1>
-                  <br />
-                  <h2>Veja as opções no nosso site</h2>
-                </div>
               </div>
-
-              <div class="mySlides1 fadeIn">
+              <div class="mySlides2 fadeIn">
                 <img src="images/img2.jpg" />
-                <div class="text">
-                  <h1>Apartamentos</h1>
-                  <br />
-                  <h2>Veja as opções no nosso site</h2>
-                </div>
               </div>
-
-              <div class="mySlides1 fadeIn">
+              <div class="mySlides2 fadeIn">
                 <img src="images/img3.jpg" />
-                <div class="text">
-                  <h1>Apartamentos</h1>
-                  <br />
-                  <h2>Veja as opções no nosso site</h2>
-                </div>
               </div>
-              <a class="prev" onclick="plusSlides(-1, 0)"
-                ><img src="left.png" width="20px"
+              <a class="prev2" onclick="plusSlides(-1, 1)"
+                ><img src="left.png" width="30px"
               /></a>
-              <a class="next" onclick="plusSlides(1, 0)"
-                ><img src="right.png" width="20px"
+              <a class="next2" onclick="plusSlides(1, 1)"
+                ><img src="right.png" width="30px"
               /></a>
-              <div class="dot-container" style="text-align: center">
-                <span class="dot" onclick="currentSlide(1, 0)"></span>
-                <span class="dot" onclick="currentSlide(2, 0)"></span>
-                <span class="dot" onclick="currentSlide(3, 0)"></span>
+              <div style="text-align: center">
+                <span class="dot2" onclick="currentSlide(1, 1)"></span>
+                <span class="dot2" onclick="currentSlide(2, 1)"></span>
+                <span class="dot2" onclick="currentSlide(3, 1)"></span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="terceira-secao">
-        <div class="slideshow2">
-          <div class="slideshow-container2">
-            <div class="mySlides2 fadeIn">
-              <img src="images/img1.jpg" />
+        <div class="quarta-secao">
+          <div class="wrapper-quarta">
+            <div class="quarta-texto">
+              <h1>Construtor,</h1>
+              <h2>Também pensamos em você!</h2>
             </div>
-            <div class="mySlides2 fadeIn">
-              <img src="images/img2.jpg" />
-            </div>
-            <div class="mySlides2 fadeIn">
-              <img src="images/img3.jpg" />
-            </div>
-            <a class="prev2" onclick="plusSlides(-1, 1)"
-              ><img src="left.png" width="30px"
-            /></a>
-            <a class="next2" onclick="plusSlides(1, 1)"
-              ><img src="right.png" width="30px"
-            /></a>
-            <div style="text-align: center">
-              <span class="dot2" onclick="currentSlide(1, 1)"></span>
-              <span class="dot2" onclick="currentSlide(2, 1)"></span>
-              <span class="dot2" onclick="currentSlide(3, 1)"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="quarta-secao">
-        <div class="wrapper-quarta">
-          <div class="quarta-texto">
-            <h1>Construtor,</h1>
-            <h2>Também pensamos em você!</h2>
-          </div>
-          <div class="conteudo">
-            <div class="icones-terr">
-              <div class="terrenos fadeScroll">
-                <div class="conteudo-border-wrapper">
-                  <div class="icone-per">
-                    <img src="terrenos.png" width="70px" height="70px" />
+            <div class="conteudo">
+              <div class="icones-terr">
+                <div class="terrenos fadeScroll">
+                  <div class="conteudo-border-wrapper">
+                    <div class="icone-per">
+                      <img src="terrenos.png" width="70px" height="70px" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grandes-terrenos fadeScroll1">
+                  <div class="conteudo-border-wrapper">
+                    <div class="icone-per">
+                      <img src="gr-terrenos.png" width="70px" height="70px" />
+                    </div>
+                  </div>
+                </div>
+                <div class="permutas fadeScroll2">
+                  <div class="conteudo-border-wrapper">
+                    <div class="icone-per">
+                      <img src="permuta.png" width="70px" height="70px" />
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="grandes-terrenos fadeScroll1">
-                <div class="conteudo-border-wrapper">
-                  <div class="icone-per">
-                    <img src="gr-terrenos.png" width="70px" height="70px" />
-                  </div>
+              <div class="texto-terr">
+                <div class="terrenos fadeScroll">
+                  <h1>Terrenos</h1>
+                  <h2>
+                    Terrenos para prédios com frente para avenida e/ou vista
+                    para o mar
+                  </h2>
+                </div>
+                <div class="grandes-terrenos fadeScroll1">
+                  <h1>Grandes Terrenos</h1>
+                  <h2>
+                    Grandes áreas para loteamentos, com foco em bairros
+                    planejados, cidades inteligentes e master plan
+                  </h2>
+                </div>
+                <div class="permutas fadeScroll2">
+                  <h1>Permutas</h1>
+                  <h2>Alternativa de troca de terreno por área construida</h2>
                 </div>
               </div>
-              <div class="permutas fadeScroll2">
-                <div class="conteudo-border-wrapper">
-                  <div class="icone-per">
-                    <img src="permuta.png" width="70px" height="70px" />
-                  </div>
-                </div>
+            </div>
+          </div>
+        </div>
+        <div class="quinta-secao">
+          <div class="quinta-texto fadeScroll">
+            <h1>CONFIRA NOSSA</h1>
+            <h2>ÁREA DE ATUAÇÃO</h2>
+          </div>
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80434.41020060625!2d-48.65379121962411!3d-27.00701658657903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b668abfea471%3A0x4fca490504a87e6e!2sBalne%C3%A1rio%20Cambori%C3%BA%20-%20State%20of%20Santa%20Catarina!5e0!3m2!1sen!2sbr!4v1610211548221!5m2!1sen!2sbr"
+              width="800"
+              height="400"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
+        <div class="sexta-secao">
+          <div class="wrapper-sexta">
+            <div class="sexta-texto fadeScroll">
+              <h1>Deseja um atendimento personalizado?</h1>
+              <p>
+                Preencha o formulário ou clique em um dos botões abaixo para
+                falar diretamente com um de nossos corretores!
+              </p>
+              <div class="sexta-botoes">
+                <a class="botao-fone fadeScroll1" href="tel:00000000"
+                  ><i class="fa fa-phone" style="font-size: 14px"></i> Ligar</a
+                >
+                <a class="botoes fadeScroll2" href="https://wa.me/000000000">
+                  <i class="fa fa-whatsapp" style="font-size: 14px"></i>
+                  Whatsapp</a
+                >
+                <a class="botoes fadeScroll3" href="mailto: abc@example.com"
+                  ><i class="fa fa-envelope-o" style="font-size: 14px"></i>
+                  E-mail</a
+                >
               </div>
             </div>
-            <div class="texto-terr">
-              <div class="terrenos fadeScroll">
-                <h1>Terrenos</h1>
-                <h2>
-                  Terrenos para prédios com frente para avenida e/ou vista para
-                  o mar
-                </h2>
-              </div>
-              <div class="grandes-terrenos fadeScroll1">
-                <h1>Grandes Terrenos</h1>
-                <h2>
-                  Grandes áreas para loteamentos, com foco em bairros
-                  planejados, cidades inteligentes e master plan
-                </h2>
-              </div>
-              <div class="permutas fadeScroll2">
-                <h1>Permutas</h1>
-                <h2>Alternativa de troca de terreno por área construida</h2>
+            <div class="sexta-form">
+              <div class="contato2">
+                <h1>Entre em Contato</h1>
+                <input type="text" id="name" name="name" placeholder="Nome*" />
+                <input
+                  type="tel"
+                  id="tele"
+                  name="telefone"
+                  placeholder="Telefone*"
+                />
+                <input
+                  type="email"
+                  id="mail"
+                  name="email"
+                  placeholder="Seu melhor e-mail*"
+                />
+                <input type="submit" value="Enviar" />
               </div>
             </div>
           </div>
         </div>
+        <footer class="rodape">
+          <img src="crf_logo.png" alt="CRF Negócios Imobiliários" />
+        </footer>
       </div>
-      <div class="quinta-secao">
-        <div class="quinta-texto fadeScroll">
-          <h1>CONFIRA NOSSA</h1>
-          <h2>ÁREA DE ATUAÇÃO</h2>
-        </div>
-        <div class="mapa">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80434.41020060625!2d-48.65379121962411!3d-27.00701658657903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b668abfea471%3A0x4fca490504a87e6e!2sBalne%C3%A1rio%20Cambori%C3%BA%20-%20State%20of%20Santa%20Catarina!5e0!3m2!1sen!2sbr!4v1610211548221!5m2!1sen!2sbr"
-            width="800"
-            height="400"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
-      </div>
-      <div class="sexta-secao">
-        <div class="wrapper-sexta">
-          <div class="sexta-texto fadeScroll">
-            <h1>Deseja um atendimento personalizado?</h1>
-            <p>
-              Preencha o formulário ou clique em um dos botões abaixo para falar
-              diretamente com um de nossos corretores!
-            </p>
-            <div class="sexta-botoes">
-              <a class="botao-fone fadeScroll1" href="tel:00000000"
-                ><i class="fa fa-phone" style="font-size: 14px"></i> Ligar</a
-              >
-              <a class="botoes fadeScroll2" href="https://wa.me/000000000">
-                <i class="fa fa-whatsapp" style="font-size: 14px"></i>
-                Whatsapp</a
-              >
-              <a class="botoes fadeScroll3" href="mailto: abc@example.com"
-                ><i class="fa fa-envelope-o" style="font-size: 14px"></i>
-                E-mail</a
-              >
-            </div>
-          </div>
-          <div class="sexta-form">
-            <div class="contato2">
-              <h1>Entre em Contato</h1>
-              <input type="text" id="name" name="name" placeholder="Nome*" />
-              <input
-                type="tel"
-                id="tele"
-                name="telefone"
-                placeholder="Telefone*"
-              />
-              <input
-                type="email"
-                id="mail"
-                name="email"
-                placeholder="Seu melhor e-mail*"
-              />
-              <input type="submit" value="Enviar" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="rodape">
-        <img src="crf_logo.png" alt="CRF Negócios Imobiliários" />
-      </footer>
+      <script type="text/javascript" src="slideshow.js"></script>
     </div>
-    <script type="text/javascript" src="slideshow.js"></script>
   </body>
 </html>
