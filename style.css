@@ -983,6 +983,9 @@ input[type="submit"]:hover {
     top: -10px;
     z-index: 1;
   }
+  .quarta-texto h2 {
+    text-align: center;
+  }
 
   .terrenos,
   .grandes-terrenos,
@@ -998,6 +1001,10 @@ input[type="submit"]:hover {
 
   .quinta-secao {
     height: auto;
+  }
+
+  .quinta-texto {
+    flex-direction: column;
   }
 
 
