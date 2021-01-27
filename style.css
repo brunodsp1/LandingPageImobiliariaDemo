@@ -965,6 +965,11 @@ input[type="submit"]:hover {
   .terceira-secao {
     height: auto;
   }
+
+  .mySlides2 img {
+    height: 350px;
+  }
+
   .quarta-secao {
     height: auto;
   }
