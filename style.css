@@ -946,6 +946,14 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
+  .contato h1{
+    font-size: 35px;
+  }
+  .contato h2,
+  .contato b {
+    font-size: 12px;
+  }
+
   .segunda-secao {
     height: auto;
   }
@@ -1011,7 +1019,7 @@ input[type="submit"]:hover {
 
   .quinta-secao {
     height: auto;
-    padding: 0 5% 0 0;
+    padding: 0 5%;
   }
 
   .quinta-texto {
