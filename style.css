@@ -1039,6 +1039,9 @@ input[type="submit"]:hover {
     align-items: center;
     text-align: center;
   }
+  .sexta-texto h1{
+    width: 100%;
+  }
 
   .sexta-botoes {
     justify-content: space-between;
