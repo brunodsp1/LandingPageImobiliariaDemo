@@ -961,6 +961,9 @@ input[type="submit"]:hover {
     width: 100%;
     padding: 0;
   }
+  .segunda-texto h1 {
+    font-size: 30px;
+  }
 
   .segunda-texto h1,
   .segunda-texto h2 {
